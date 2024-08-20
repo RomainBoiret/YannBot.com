@@ -1,9 +1,12 @@
-import { createApp } from 'vue'
 import './style.css'
+import { createApp } from 'vue'
 
-import HelloWorld from './components/HelloWorld.vue'
+import HeaderEmbed from './components/HeaderEmbed/HeaderEmbed.vue'
+import HeaderNavbar from './components/HeaderNavbar/HeaderNavBar.vue'
 
 const app = createApp({})
 
-app.component('hello-world', HelloWorld)
+app.component('header-embed', HeaderEmbed)
+app.component('header-navbar', HeaderNavbar)
+
 app.mount('#app')
